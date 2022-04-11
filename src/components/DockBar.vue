@@ -6,32 +6,32 @@
         </div>
         <div class="selector">
             <div class="group">
-                <div class="link clickable">
+                <router-link to="game" class="link clickable">
                     <div class="icon"><img src="../assets/icons/game.png" alt=""></div>
                     <div class="text">Game</div>
-                </div>
+                </router-link>
             </div>
             <div class="group">
-                <div class="link clickable">
+                <a href="https://open.spotify.com/artist/3G5PUVKuaQLG6pSBt6RJtQ" target="_blank" class="link clickable">
                     <div class="icon"><img src="../assets/icons/music.png" alt=""></div>
                     <div class="text">Music</div>
-                </div>
-                <div class="link clickable">
+                </a>
+                <a href="https://www.youtube.com/channel/UC1z6zXgfXKroyZQzasibhDQ" target="_blank" class="link clickable">
                     <div class="icon"><img src="../assets/icons/video.png" alt=""></div>
                     <div class="text">Videos</div>
-                </div>
-                <div class="link clickable">
+                </a>
+                <a href="https://www.instagram.com/itstommy135/" target="_blank" class="link clickable">
                     <div class="icon"><img src="../assets/icons/instagram.png" alt=""></div>
                     <div class="text">Instagram</div>
-                </div>
-                <div class="link clickable">
+                </a>
+                <a href="https://www.tiktok.com/@itstommy135" target="_blank" class="link clickable">
                     <div class="icon"><img src="../assets/icons/tiktok.png" alt=""></div>
                     <div class="text">TikTok</div>
-                </div>
-                <div class="link clickable">
+                </a>
+                <router-link to="store" class="link clickable">
                     <div class="icon"><img src="../assets/icons/merch.png" alt=""></div>
                     <div class="text">Merch</div>
-                </div>
+                </router-link>
             </div>
             <div class="group">
                 <div class="link clickable">
@@ -43,7 +43,7 @@
     </div>
     <div class="divider"></div>
     <div class="bar">
-        <img class="start" src="../assets/images/start.png"/>
+        <router-link to="/"><img class="start clickable" src="../assets/images/start.png"/></router-link>
         <img class="widget" src="../assets/images/widget.png"/>
     </div>
 </div>
@@ -164,6 +164,8 @@ export default {
     padding-left: 10px;
     padding-right: 10px;
     gap: 20px;
+    text-decoration: none;
+    color: black;
 }
 .dock-bar .menu > .selector > .group > .link:hover {
     background-color: hsl(0, 0%, 60%);

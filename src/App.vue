@@ -3,7 +3,7 @@
   <div class="view">
     <router-view/>
   </div>
-  <DockBar v-bind:class="{ hide: this.$route.path != '/' }"/>
+  <DockBar/>
 </div>
 </template>
 
@@ -15,17 +15,11 @@ export default {
     DockBar
   },
   methods: {
-    test: function() {
-      console.log(this.$route)
-    }
   },
   watch: {
     '$route' (to) {
       document.title = `${to.meta.title} | Tommy 135` || '404 | Page Not Found'
     }
-  },
-  mounted() {
-    this.test()
   }
 }
 
@@ -52,7 +46,7 @@ export default {
   cursor:url('assets/cursors/cursor-hand.png'), auto;
 }
 .main .clickable {
-  cursor:url('assets/cursors/pointer-hand-blue.png'), auto;
+  cursor:url('assets/cursors/pointer-hand.png'), auto;
 }
 .main > .view {
   height: 100%;
