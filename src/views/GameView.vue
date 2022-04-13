@@ -89,7 +89,7 @@ export default {
 
 .game .footer > .fullscreen > svg {
     width: 4vw;
-    filter: invert(60%) sepia(27%) saturate(7153%) hue-rotate(158deg) brightness(90%) contrast(101%);
+    filter: invert(19%) sepia(10%) saturate(9%) hue-rotate(314deg) brightness(91%) contrast(88%);
     /* https://codepen.io/sosuke/pen/Pjoqqp */
 }
 
@@ -114,6 +114,7 @@ export default {
     height: 31.25vw;
 }
 .desktop #unityContainer {
-    width: 80vw;
+    width: 60vw;
+    height: 37.5vw;
 }
 </style>
