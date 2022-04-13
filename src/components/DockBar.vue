@@ -1,6 +1,6 @@
 <template>
 <div class="dock-bar">
-    <div class="menu">
+    <div class="menu" v-if="$route.name != 'game'">
         <div class="mini-logo">
             <img src="../assets/images/tomdows.png" alt="">
         </div>
@@ -43,7 +43,7 @@
     </div>
     <div class="divider"></div>
     <div class="bar">
-        <router-link to="/"><img class="start clickable" src="../assets/images/start.png"/></router-link>
+        <img @click="go_home" class="start clickable" src="../assets/images/start.png"/>
         <img class="widget" src="../assets/images/widget.png"/>
     </div>
 </div>
@@ -51,7 +51,14 @@
 
 <script>
 export default {
-
+    methods: {
+        go_home() {
+            this.$router.push('/').then(() => {
+                this.$router.go()
+                // refresh to clear instance of unity.
+            })
+        }
+    }
 }
 </script>
 
@@ -169,6 +176,16 @@ export default {
 }
 .dock-bar .menu > .selector > .group > .link:hover {
     background-color: hsl(0, 0%, 60%);
+}
+
+
+@media (max-width: 767px) {
+.dock-bar .menu {
+    left: 50%; 
+    transform: translate(-50%);
+    margin-left: 0;
+}
+
 }
 
 
