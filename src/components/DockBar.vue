@@ -12,7 +12,7 @@
                 </router-link>
             </div>
             <div class="group">
-                <a href="https://open.spotify.com/artist/3G5PUVKuaQLG6pSBt6RJtQ" target="_blank" class="link clickable">
+                <a href="https://soundcloud.com/itstommy135/tumbleweed/s-EubikSlxCzQ?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="link clickable">
                     <div class="icon"><img src="../assets/icons/music.png" alt=""></div>
                     <div class="text">Music</div>
                 </a>

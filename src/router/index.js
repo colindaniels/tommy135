@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import GameView from '../views/GameView.vue'
+import EPKView from '../views/EPKView.vue'
 
 
 const router = createRouter({
@@ -20,6 +21,14 @@ const router = createRouter({
       component: GameView,
       meta: {
         title: 'Game'
+      }
+    },
+    {
+      path: '/epk',
+      name: 'epk',
+      component: EPKView,
+      meta: {
+        title: 'epk'
       }
     },
 
