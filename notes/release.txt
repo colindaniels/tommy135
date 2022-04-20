@@ -1,0 +1,9 @@
+Patch notes v1.1 4/17/22
+
+- New game patch release. Unity game - character velocity doesn’t jump forward randomly.
+- Spotify link links to private url
+- Added controls instructions picture in /game route
+- Favicon.ico updated
+- /epk route added for press. Bio and press icon.
+- SEO optimization
+- MenuBar updated as seperate component

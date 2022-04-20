@@ -1,6 +1,5 @@
 <template>
   <div class="epk">
-      <HomeView/>
       <div class="segments">
         <div class="bio">
           <h1>Bio</h1>
@@ -13,15 +12,12 @@
             <h4 class="icon-text">Press Photos</h4>
         </div>
       </div>
+      <img class="both" src="../assets/images/both.png" alt="">
   </div>
 </template>
 
 <script>
-import HomeView from '@/views/HomeView.vue'
 export default {
-    components: {
-        HomeView
-    }
 }
 </script>
 
@@ -31,8 +27,8 @@ export default {
 .epk {
     font-family: 'W95FA', sans-serif;
     width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 h1, h4 {
@@ -40,11 +36,12 @@ h1, h4 {
 }
 
 .epk > .segments {
-    width: 45%;
-    margin-top: 200px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
 }
 
 .epk > .segments > .bio > p {
@@ -70,6 +67,14 @@ h1, h4 {
 }
 .epk > .segments > .icon:hover > img {
     filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+}
+
+.both {
+    position: fixed;
+    width: 30%;
+    right: 5%;
+    bottom: 10%;
+    min-width: 150px;
 }
 
 

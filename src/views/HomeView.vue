@@ -1,8 +1,7 @@
 <template>
   <div class="home">
     <div class="images">
-      <img class="logo" src="../assets/images/logo.png">
-      <img class="portrait" src="../assets/images/tommy-shoot.png">
+      <img class="both" src="../assets/images/both.png">
     </div>
   </div>
 </template>
@@ -19,7 +18,8 @@ export default {
 
 .home {
   height: 100%;
-  position: relative;
+  width: 100%;
+  position: absolute;
 }
 
 .images {
@@ -28,40 +28,15 @@ export default {
   height: 100%;
 }
 
-.images > img.portrait {
-  position: absolute;
-  bottom: 75px;
-  right: 40px;
+.images > img.both {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
   width: 30%;
+  min-width: 150px;
 }
 
-.images > img.logo {
-  position: absolute;
-  top: 75px;
-  right: 40px;
-  width: 30%;
-}
 
-@media (max-width: 767px) {
-  .images > img.portrait {
-  position: absolute;
-  top: 25vh;
-  left: 50%; 
-  transform: translate(-50%);
-  width: 200px;
-  display: none;
-}
-
-.images > img.logo {
-  position: absolute;
-  left: 50%; 
-  top: 10px;
-  transform: translate(-50%);
-  width: 200px;
-}
-
-    
-  }
 
 
 

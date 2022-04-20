@@ -82,6 +82,10 @@ export default {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 }
 
 
@@ -100,8 +104,8 @@ export default {
     margin-left: 30px;
 }
 .game .game-and-instructions > img {
-    width: 300px;
-    height: 300px;
+    width: 20vw;
+    height: 20vw;
 }
 
 

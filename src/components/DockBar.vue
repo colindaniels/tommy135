@@ -1,46 +1,5 @@
 <template>
 <div class="dock-bar">
-    <div class="menu" v-if="$route.name != 'game'">
-        <div class="mini-logo">
-            <img src="../assets/images/tomdows.png" alt="">
-        </div>
-        <div class="selector">
-            <div class="group">
-                <router-link to="game" class="link clickable">
-                    <div class="icon"><img src="../assets/icons/game.png" alt=""></div>
-                    <div class="text">Game</div>
-                </router-link>
-            </div>
-            <div class="group">
-                <a href="https://soundcloud.com/itstommy135/tumbleweed/s-EubikSlxCzQ?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="link clickable">
-                    <div class="icon"><img src="../assets/icons/music.png" alt=""></div>
-                    <div class="text">Music</div>
-                </a>
-                <a href="https://www.youtube.com/channel/UC1z6zXgfXKroyZQzasibhDQ" target="_blank" class="link clickable">
-                    <div class="icon"><img src="../assets/icons/video.png" alt=""></div>
-                    <div class="text">Videos</div>
-                </a>
-                <a href="https://www.instagram.com/itstommy135/" target="_blank" class="link clickable">
-                    <div class="icon"><img src="../assets/icons/instagram.png" alt=""></div>
-                    <div class="text">Instagram</div>
-                </a>
-                <a href="https://www.tiktok.com/@itstommy135" target="_blank" class="link clickable">
-                    <div class="icon"><img src="../assets/icons/tiktok.png" alt=""></div>
-                    <div class="text">TikTok</div>
-                </a>
-                <router-link to="store" class="link clickable">
-                    <div class="icon"><img src="../assets/icons/merch.png" alt=""></div>
-                    <div class="text">Merch</div>
-                </router-link>
-            </div>
-            <div class="group">
-                <div class="link clickable">
-                    <div class="icon"><img src="../assets/icons/contact.png" alt=""></div>
-                    <div class="text">Contact</div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="divider"></div>
     <div class="bar">
         <img @click="go_home" class="start clickable" src="../assets/images/start.png"/>
@@ -64,7 +23,7 @@ export default {
 
 <style scoped>
 .dock-bar {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -112,81 +71,10 @@ export default {
     margin-left: 2px;
     margin-right: 2px;
 }
-.dock-bar .menu {
-    width: 275px;
-    background: rgb(192, 192, 192);
-    z-index: 1;
-    margin-left: 6px;
-    border-right: 3px solid rgb(28, 25, 25);
-    border-bottom: 2px solid rgb(28, 25, 25);
-    border-left: 2px solid white;
-    border-top: 2px solid white;
-    display: flex;
-    position: absolute;
-    bottom: 41px;
-}
-
-.dock-bar .menu > .mini-logo {
-    width: 13%;
-    background-color: rgb(128, 128, 128);
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.dock-bar .menu > .mini-logo img {
-    width: 75%;
-    bottom: 3px;
-    position: absolute;
-}
-.dock-bar .menu > .selector {
-    height: 100%;
-    padding: 3px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.dock-bar .menu > .selector > .group {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid white;
-    width: 100%;
-    position: relative;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.dock-bar .menu > .selector > .group::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background: rgb(128, 128, 128);
-}
-.dock-bar .menu > .selector > .group > .link {
-    display: flex;
-    align-items: center;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    gap: 20px;
-    text-decoration: none;
-    color: black;
-}
-.dock-bar .menu > .selector > .group > .link:hover {
-    background-color: hsl(0, 0%, 60%);
-}
 
 
-@media (max-width: 767px) {
-.dock-bar .menu {
-    left: 50%; 
-    transform: translate(-50%);
-    margin-left: 0;
-}
 
-}
+
 
 
 </style>

@@ -3,16 +3,19 @@
   <div class="view">
     <router-view/>
   </div>
+  <MenuBar/>
   <DockBar/>
 </div>
 </template>
 
 <script>
 import DockBar from './components/DockBar.vue'
+import MenuBar from './components/MenuBar.vue'
 export default {
   name: 'App',
   components: {
-    DockBar
+    DockBar,
+    MenuBar
   },
   methods: {
   },
@@ -26,23 +29,19 @@ export default {
 </script>
 
 <style>
+body {
+  margin: 0;
+  background: #e9e7e3;
+}
 #app {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .main {
-  height: 100%;
-  width: 100%;
-  background: #e9e7e3;
   cursor:url('assets/cursors/cursor-hand.png'), auto;
 }
 .main .clickable {
