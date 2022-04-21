@@ -116,6 +116,10 @@
 .menu > .selector > .group > .link > .icon > img {
     width: 100%;
 }
+.menu > .selector > .group > .link > .text {
+    font-size: 18px;
+    font-weight: 400;
+}
 .menu > .logo {
     position: absolute;
     width: 100%;

@@ -12,24 +12,22 @@
             <h4 class="icon-text">Press Photos</h4>
         </a>
       </div>
-      <HomeView/>
+      <PhotoShoot/>
   </div>
 </template>
 
 <script>
-import HomeView from '@/views/HomeView.vue'
+import PhotoShoot from '@/components/PhotoShoot.vue'
 export default {
     components: {
-        HomeView
+        PhotoShoot
     }
 }
 </script>
 
 <style scoped>
-@import url('http://fonts.cdnfonts.com/css/w95fa');
 
 .epk {
-    font-family: 'W95FA', sans-serif;
     height: 100%;
     width: 100%;
     display: flex;
@@ -41,6 +39,7 @@ h1, h4 {
 .epk > .segments {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: absolute;
     left: 300px;
     right: 35%;
@@ -62,6 +61,7 @@ h1, h4 {
     color: #2c3e50;
     text-decoration: none;
     margin-bottom: 50px;
+    width: max-content;
 }
 .epk > .segments > .icon > .icon-text {
     padding: 3px;
