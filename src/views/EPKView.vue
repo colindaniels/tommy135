@@ -7,10 +7,10 @@
           <p>Dive into the world of his  debut single “Tumbleweed” with accompanying music video filled with pre 2000’s nostalgia that comments on the prevalence of social media addiction in today’s society.</p>
           <p>For this single Tommy designed and developed a retro video game thats featured in the music video and is playable on his website for desktop and mobile.</p>
         </div>
-        <div class="icon clickable">
+        <a href="https://drive.google.com/drive/folders/1W654uIvlTEHQNmkU7yDlefag9tu8wAhA?usp=sharing" target="_blank" class="icon clickable">
             <img src="../../src/assets/images/epk/press_photo_icon.png" alt="">
             <h4 class="icon-text">Press Photos</h4>
-        </div>
+        </a>
       </div>
       <img class="both" src="../assets/images/both.png" alt="">
   </div>
@@ -53,6 +53,8 @@ h1, h4 {
     flex-direction: column;
     align-items: center;
     padding: 5px;
+    color: #2c3e50;
+    text-decoration: none;
 }
 .epk > .segments > .icon > .icon-text {
     padding: 3px;
