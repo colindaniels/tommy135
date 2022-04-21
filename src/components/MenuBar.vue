@@ -1,5 +1,6 @@
 <template>
     <div class="menu" v-if="$route.name != 'game'">
+        <div class="logo mobile-show"><img src="../assets/images/logo.png" alt=""></div>
         <div class="mini-logo">
             <img src="../assets/images/tomdows.png" alt="">
         </div>
@@ -115,4 +116,14 @@
 .menu > .selector > .group > .link > .icon > img {
     width: 100%;
 }
+.menu > .logo {
+    position: absolute;
+    width: 100%;
+    top: -16vw;
+    display: none;
+}
+.menu > .logo > img {
+    width: 80%;
+}
+
 </style>

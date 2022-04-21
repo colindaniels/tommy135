@@ -55,6 +55,14 @@ body {
   display: none !important;
 }
 
-
+@media (max-width: 830px) {
+.mobile-hide {
+  display: none !important;
+}
+.mobile-show {
+  display: unset !important;
+}
+    
+}
 
 </style>

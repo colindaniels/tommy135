@@ -35,6 +35,11 @@ export default {
   width: 30%;
   min-width: 150px;
 }
+@media (max-width: 830px) {
+  .images > img.both {
+    display: none;
+  }
+}
 
 
 

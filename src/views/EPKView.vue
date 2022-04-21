@@ -12,12 +12,16 @@
             <h4 class="icon-text">Press Photos</h4>
         </a>
       </div>
-      <img class="both" src="../assets/images/both.png" alt="">
+      <HomeView/>
   </div>
 </template>
 
 <script>
+import HomeView from '@/views/HomeView.vue'
 export default {
+    components: {
+        HomeView
+    }
 }
 </script>
 
@@ -26,26 +30,28 @@ export default {
 
 .epk {
     font-family: 'W95FA', sans-serif;
-    width: 100%;
     height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
 }
 h1, h4 {
     margin: 0;
 }
 
 .epk > .segments {
-    width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 200px;
-    margin-bottom: 50px;
+    position: absolute;
+    left: 300px;
+    right: 35%;
+    top: 10%;
+    padding: 20px;
+    min-width: 225px;
 }
 
 .epk > .segments > .bio > p {
     font-size: 25px;
+    text-align: justify;
 }
 
 .epk > .segments > .icon {
@@ -55,6 +61,7 @@ h1, h4 {
     padding: 5px;
     color: #2c3e50;
     text-decoration: none;
+    margin-bottom: 50px;
 }
 .epk > .segments > .icon > .icon-text {
     padding: 3px;
@@ -71,14 +78,24 @@ h1, h4 {
     filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 }
 
-.both {
-    position: fixed;
-    width: 30%;
-    right: 5%;
-    bottom: 10%;
-    min-width: 150px;
+
+@media (max-width: 970px) {
+    .epk > .segments {
+        left: 290px;
+    }
+}
+
+@media (max-width: 830px) {
+    .epk > .segments {
+        right: 0;
+    }
 }
 
 
+@media (max-width: 685px) {
+    .epk > .segments {
+        left: 42.5%;
+    }
+}
 
 </style>
