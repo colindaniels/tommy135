@@ -2,15 +2,16 @@
 "companyName": "MansoorTariq",
 "productName": "Tommy Langford (2nd endless Web)",
 "productVersion": "0.1",
-"dataUrl": "TouchWeb.data.unityweb",
-"wasmCodeUrl": "TouchWeb.wasm.code.unityweb",
-"wasmFrameworkUrl": "TouchWeb.wasm.framework.unityweb",
+"dataUrl": "WEBGL.data.unityweb",
+"wasmCodeUrl": "WEBGL.wasm.code.unityweb",
+"wasmFrameworkUrl": "WEBGL.wasm.framework.unityweb",
 "graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "WEBGL.jpg",
 "splashScreenStyle": "Dark",
-"backgroundColor": "#231F20",
+"backgroundColor": "#FFFFFF",
 "cacheControl": {"default": "must-revalidate"},
 "developmentBuild": false,
 "multithreading": false,
-"unityVersion": "2019.4.37f1"
+"unityVersion": "2019.4.34f1"
 }
