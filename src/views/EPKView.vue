@@ -43,7 +43,7 @@ h1, h4 {
     position: absolute;
     left: 300px;
     right: 35%;
-    top: 10%;
+    top: 15%;
     padding: 20px;
     min-width: 225px;
 }

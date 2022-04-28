@@ -14,7 +14,7 @@
   position: fixed;
   bottom: 10%;
   right: 5%;
-  width: 30%;
+  width: 40%;
   min-width: 150px;
 }
 @media (max-width: 830px) {

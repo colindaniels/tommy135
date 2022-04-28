@@ -1,4 +1,6 @@
-Patch notes v1.1.1 4/21/22
+Patch notes v1.1.2 4/2/22
 
-- photoshoot added as component
-- font update
+- Game update and fix
+- font compatability issue fixed
+- Retro top bar on game view
+- Increased photoshoot image size

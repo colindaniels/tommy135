@@ -29,7 +29,12 @@ export default {
 </script>
 
 <style>
-@import url('http://fonts.cdnfonts.com/css/w95fa');
+@font-face {
+    font-family: 'W95FA';
+    font-style: normal;
+    font-weight: 400;
+    src: local('W95FA'), url('assets/fonts/W95FA.woff') format('woff');
+}
 body {
   margin: 0;
   background: #e9e7e3;
