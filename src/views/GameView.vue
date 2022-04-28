@@ -35,10 +35,10 @@
 
 <script>
 
-import UnityProgress from '../../public/WEBGL/TemplateData/UnityProgress'
+import UnityProgress from '../../public/TouchWeb/TemplateData/UnityProgress'
 
-const noTocuhName = `WEBGL`
-const touchName = 'WEBGL'
+const noTocuhName = 'NoTouchWeb'
+const touchName = 'TouchWeb'
 export default {
     data() {
         return {
