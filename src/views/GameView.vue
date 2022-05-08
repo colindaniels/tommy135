@@ -32,10 +32,10 @@
 
 <script>
 
-import UnityProgress from '../../public/TouchWeb/TemplateData/UnityProgress'
+import UnityProgress from '../../public/Tweb/TemplateData/UnityProgress'
 
-const noTocuhName = 'NoTouchWeb'
-const touchName = 'TouchWeb'
+const noTocuhName = 'NTweb'
+const touchName = 'Tweb'
 export default {
     data() {
         return {
@@ -54,6 +54,7 @@ export default {
                 if (this.isMobile()) {
                     this.unityInstance = UnityLoader.instantiate("unityContainer", `${touchName}/Build/${touchName}.json`, {onProgress: UnityProgress});
                         document.querySelector('button').click()
+                        document.querySelector('.fullscreen').click()
                         
                 }
                 else {
@@ -191,7 +192,7 @@ export default {
     margin-top: 0;
 }
 .game.mobile .game-and-instructions > .retro-window {
-    width: 90%;
+    width: 60%;
 }
 
 .game-container,
