@@ -1,5 +1,5 @@
 <template>
-    <div class="menu" v-if="$route.name != 'game'">
+    <div class="menu" v-if="$route.name != 'game'" v-bind:class="{ 'home': $route.name == 'home' }">
         <div class="logo mobile-show"><img src="../assets/images/logo.png" alt=""></div>
         <div class="mini-logo">
             <img src="../assets/images/tomdows.png" alt="">
@@ -40,8 +40,11 @@
                 </div>
             </div>
         </div>
+        {{center}}
     </div> 
 </template>
+<script>
+</script>
 <style scoped>
 .menu {
     width: 40vw;
@@ -128,6 +131,13 @@
 }
 .menu > .logo > img {
     width: 80%;
+}
+
+@media (max-width: 685px) {
+  .menu.home {
+    left: 50%; 
+    transform: translate(-50%);
+  }
 }
 
 </style>

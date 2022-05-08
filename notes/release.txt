@@ -1,6 +1,6 @@
-Patch notes v1.1.2 4/2/22
+Patch notes v1.1.1 4/2/22
 
-- Game update and fix
-- font compatability issue fixed
-- Retro top bar on game view
-- Increased photoshoot image size
+- Game bug fixed (git lfs removed)
+- No gray padding in retro-window
+- Removed control instructions
+- Game centered and only creates an instance when not vertical

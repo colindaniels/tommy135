@@ -43,10 +43,12 @@ h1, h4 {
     position: absolute;
     left: 300px;
     right: 35%;
-    top: 15%;
+    top: 20%;
     padding: 20px;
     min-width: 225px;
+    width: 25%;
 }
+
 
 .epk > .segments > .bio > p {
     font-size: 25px;
