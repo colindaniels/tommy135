@@ -1,6 +1,5 @@
-Patch notes v1.1.3 4/2/22
+Patch notes v1.1.4 5/22/22
 
-- Game bug fixed (git lfs removed)
-- No gray padding in retro-window
-- Removed control instructions
-- Game centered and only creates an instance when not vertical
+- Game update
+- Menu width increased for mobile
+- Logo increased for mobile

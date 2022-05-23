@@ -137,6 +137,10 @@
   .menu.home {
     left: 50%; 
     transform: translate(-50%);
+    width: 70%;
+  }
+  .logo.mobile-show {
+      top: -125px;
   }
 }
 
