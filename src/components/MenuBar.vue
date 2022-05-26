@@ -1,15 +1,14 @@
 <template>
     <div class="menu" v-if="$route.name != 'game'" v-bind:class="{ 'home': $route.name == 'home' }">
-        <div class="logo mobile-show"><img src="../assets/images/logo.png" alt=""></div>
         <div class="mini-logo">
             <img src="../assets/images/tomdows.png" alt="">
         </div>
         <div class="selector">
             <div class="group">
-                <router-link to="game" class="link clickable">
+                <a :href="`${base_path}/game`" class="link clickable">
                     <div class="icon"><img src="../assets/icons/game.png" alt=""></div>
                     <div class="text">Game</div>
-                </router-link>
+                </a>
             </div>
             <div class="group">
                 <a href="https://soundcloud.com/itstommy135/tumbleweed/s-EubikSlxCzQ?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="link clickable">
@@ -28,10 +27,10 @@
                     <div class="icon"><img src="../assets/icons/tiktok.png" alt=""></div>
                     <div class="text">TikTok</div>
                 </a>
-                <router-link to="store" class="link clickable">
+                <a :href="`${base_path}/store`" class="link clickable">
                     <div class="icon"><img src="../assets/icons/merch.png" alt=""></div>
                     <div class="text">Merch</div>
-                </router-link>
+                </a>
             </div>
             <div class="group">
                 <div class="link clickable">
@@ -40,10 +39,18 @@
                 </div>
             </div>
         </div>
-        {{center}}
     </div> 
 </template>
 <script>
+
+export default {
+    data() {
+        return {
+            base_path: process.env.VUE_APP_BASE_PATH
+        }
+    }
+}
+
 </script>
 <style scoped>
 .menu {
@@ -123,24 +130,12 @@
     font-size: 18px;
     font-weight: 400;
 }
-.menu > .logo {
-    position: absolute;
-    width: 100%;
-    top: -16vw;
-    display: none;
-}
-.menu > .logo > img {
-    width: 80%;
-}
 
 @media (max-width: 685px) {
   .menu.home {
     left: 50%; 
     transform: translate(-50%);
     width: 70%;
-  }
-  .logo.mobile-show {
-      top: -125px;
   }
 }
 

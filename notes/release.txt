@@ -1,5 +1,7 @@
-Patch notes v1.1.4 5/22/22
+Patch notes v1.1.5 5/26/22
 
-- Game update
-- Menu width increased for mobile
-- Logo increased for mobile
+- secret link added to router
+- .env created with base_url variable for secret variables and eventually empty string for production
+- UnityLoader script taken out of public and into GameView only so non game users won't have to load the game
+- Loading text in game centered
+- Logo on mobile centered and taken to app view

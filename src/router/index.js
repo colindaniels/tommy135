@@ -2,13 +2,15 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import GameView from '../views/GameView.vue'
 import EPKView from '../views/EPKView.vue'
+import NotFound from '../components/NotFound.vue'
 
+const base_path = process.env.VUE_APP_BASE_PATH
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: `/${base_path}`,
       name: 'home',
       component: HomeView,
       meta: {
@@ -16,7 +18,7 @@ const router = createRouter({
       }
     },
     {
-      path: '/game',
+      path: `/${base_path}/game`,
       name: 'game',
       component: GameView,
       meta: {
@@ -24,7 +26,7 @@ const router = createRouter({
       }
     },
     {
-      path: '/epk',
+      path: `/${base_path}/epk`,
       name: 'epk',
       component: EPKView,
       meta: {
@@ -36,7 +38,7 @@ const router = createRouter({
     {
       path: "/:pathMatch(.*)*",
       name: "not-found",
-      component: () => import('../components/NotFound.vue'),
+      component: NotFound,
       meta: {
         title: 'Page Not Found'
       }

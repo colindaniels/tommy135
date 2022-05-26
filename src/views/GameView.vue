@@ -12,9 +12,9 @@
                         </div>
                         <div class="retro-content">
                             <div class="game-and-footer">
+                                <div class="loading">Loading...</div>
                                 <fullscreen v-model="fullscreen" id="unityContainer"></fullscreen>
                             </div>
-                            <div class="loading">Loading...</div>
                         </div>
 
                     </div>
@@ -40,10 +40,18 @@ export default {
     data() {
         return {
             isVertical: false,
-            fullscreen: false
+            fullscreen: false,
+            base_url: process.env.VUE_APP_BASE_URL,
+            base_path: process.env.VUE_APP_BASE_PATH
         }
     },
     mounted() {
+
+        let externalScript = document.createElement('script')
+        externalScript.setAttribute('src', `${this.base_url}/${touchName}/Build/UnityLoader.js`)
+        document.head.appendChild(externalScript)
+
+
         var first = true
 
         this.isVertical = this.isVerticalTest()
@@ -52,13 +60,13 @@ export default {
 
             if (!this.isVertical && first) {
                 if (this.isMobile()) {
-                    this.unityInstance = UnityLoader.instantiate("unityContainer", `${touchName}/Build/${touchName}.json`, {onProgress: UnityProgress});
+                    this.unityInstance = UnityLoader.instantiate("unityContainer", `${this.base_url}/${touchName}/Build/${touchName}.json`, {onProgress: UnityProgress});
                         document.querySelector('button').click()
                         document.querySelector('.fullscreen').click()
                         
                 }
                 else {
-                    this.unityInstance = UnityLoader.instantiate("unityContainer", `${noTocuhName}/Build/${noTocuhName}.json`, {onProgress: UnityProgress});
+                    this.unityInstance = UnityLoader.instantiate("unityContainer", `${this.base_url}/${noTocuhName}/Build/${noTocuhName}.json`, {onProgress: UnityProgress});
 
                 }
                 first = false
@@ -98,7 +106,7 @@ export default {
             this.fullscreen = !this.fullscreen
         },
         go_home() {
-            this.$router.push('/').then(() => {
+            this.$router.push(`/${this.base_path}`).then(() => {
                 this.$router.go()
                 // refresh to clear instance of unity.
             })
@@ -144,8 +152,6 @@ export default {
     filter: invert(19%) sepia(10%) saturate(9%) hue-rotate(314deg) brightness(91%) contrast(88%);
     /* https://codepen.io/sosuke/pen/Pjoqqp */
 }
-.game .game-and-footer {
-}
 
 .rotate-phone {
     position: absolute;
@@ -185,7 +191,6 @@ export default {
 .game .game-and-instructions > .retro-window > .retro-content {
     background-color: rgb(192, 192, 192);
     z-index: 5;
-    position: relative;
 }
 
 .game.mobile {
@@ -205,8 +210,7 @@ export default {
 
 .game .loading {
     position: absolute;
-    top: 0;
-    z-index: -1;
+    z-index: 0;
     font-weight: 800;
     font-size: 45px;
     top: 50%;  
