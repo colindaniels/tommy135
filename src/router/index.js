@@ -26,7 +26,7 @@ const router = createRouter({
       }
     },
     {
-      path: `/${base_path}/epk`,
+      path: `/epk`,
       name: 'epk',
       component: EPKView,
       meta: {

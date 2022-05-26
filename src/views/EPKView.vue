@@ -31,6 +31,7 @@ export default {
     height: 100%;
     width: 100%;
     display: flex;
+    position: absolute;
 }
 h1, h4 {
     margin: 0;
@@ -40,13 +41,10 @@ h1, h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    left: 300px;
-    right: 35%;
-    top: 20%;
     padding: 20px;
     min-width: 225px;
-    width: 25%;
+    width: 100%;
+    margin-left: 300px;
 }
 
 

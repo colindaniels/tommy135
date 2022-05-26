@@ -1,7 +1,6 @@
-Patch notes v1.1.5 5/26/22
+Patch notes v1.1.6 5/26/22
 
-- secret link added to router
-- .env created with base_url variable for secret variables and eventually empty string for production
-- UnityLoader script taken out of public and into GameView only so non game users won't have to load the game
-- Loading text in game centered
-- Logo on mobile centered and taken to app view
+- epk not on secret link
+- menu home updated
+- epk photoshoot fixed
+- music link changed

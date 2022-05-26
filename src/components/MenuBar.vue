@@ -11,7 +11,7 @@
                 </a>
             </div>
             <div class="group">
-                <a href="https://soundcloud.com/itstommy135/tumbleweed/s-EubikSlxCzQ?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="link clickable">
+                <a href="https://streamlink.to/tumbleweed" target="_blank" class="link clickable">
                     <div class="icon"><img src="../assets/icons/music.png" alt=""></div>
                     <div class="text">Music</div>
                 </a>

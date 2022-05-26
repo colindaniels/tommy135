@@ -12,10 +12,15 @@
 export default {
     methods: {
         go_home() {
-            this.$router.push('/').then(() => {
+            this.$router.push(`/${this.base_path}`).then(() => {
                 this.$router.go()
                 // refresh to clear instance of unity.
             })
+        }
+    },
+    data() {
+        return {
+            base_path: process.env.VUE_APP_BASE_PATH
         }
     }
 }
