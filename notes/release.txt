@@ -1,6 +1,3 @@
-Patch notes v1.1.6 5/26/22
+Patch notes v1.1.7 6/2/22
 
-- epk not on secret link
-- menu home updated
-- epk photoshoot fixed
-- music link changed
+- youtube link updated

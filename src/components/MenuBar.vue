@@ -15,7 +15,7 @@
                     <div class="icon"><img src="../assets/icons/music.png" alt=""></div>
                     <div class="text">Music</div>
                 </a>
-                <a href="https://www.youtube.com/channel/UC1z6zXgfXKroyZQzasibhDQ" target="_blank" class="link clickable">
+                <a href="https://youtu.be/ewDor73ucso" target="_blank" class="link clickable">
                     <div class="icon"><img src="../assets/icons/video.png" alt=""></div>
                     <div class="text">Videos</div>
                 </a>
