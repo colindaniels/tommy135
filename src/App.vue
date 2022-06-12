@@ -27,9 +27,6 @@ export default {
     currentRouteName() {
       return this.$route.name;
     },
-  },
-  mounted() {
-    console.log(process.env)
   }
 };
 </script>
