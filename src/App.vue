@@ -28,6 +28,9 @@ export default {
       return this.$route.name;
     },
   },
+  mounted() {
+    console.log(process.env)
+  }
 };
 </script>
 
